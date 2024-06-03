@@ -1,10 +1,25 @@
-.App {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #222;
-  color: #f0f0f0;
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevents scrolling and white spaces */
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
 }
 
-section {
-  margin: 2rem 0;
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: radial-gradient(circle at center, #D8BFD8, white); /* Updated gradient */
+}
+
+.content {
+  flex: 1;
+  width: 100%; /* Full width for content */
+  padding-top: 50px; /* Adjust for the height of the sidebar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Allow scrolling for content */
 }
