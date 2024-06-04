@@ -1,4 +1,5 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import './Home.css';
 
 function Home() {
@@ -7,7 +8,14 @@ function Home() {
       <div className="tile">
         <div className="top-section">
           <div className="left-section">
-            <h1>Hi, I am Shail Patel</h1>
+            <h1>
+              <TypeAnimation
+                sequence={["Hi, I am Shail Patel", 2000]}
+                wrapper="span"
+                cursor={true}
+                repeat={0}
+              />
+            </h1>
             <div className="sub-section">
               <h2>Full Stack Developer</h2>
               <div className="icons">

@@ -1,9 +1,14 @@
+/* App.css */
+
 body, html, #root {
   height: 100%;
   margin: 0;
   overflow: hidden; /* Prevents scrolling and white spaces */
   font-family: 'Helvetica', sans-serif;
   font-weight: bold;
+  cursor: url('./cursor.png'), auto; /* Custom cursor */
+
+
 }
 
 .App {
@@ -11,6 +16,7 @@ body, html, #root {
   flex-direction: column;
   height: 100%;
   background: radial-gradient(circle at center, #D8BFD8, white); /* Updated gradient */
+  position: relative;
 }
 
 .content {
@@ -22,4 +28,13 @@ body, html, #root {
   justify-content: center;
   align-items: center;
   overflow: auto; /* Allow scrolling for content */
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure particles are behind the content */
 }
