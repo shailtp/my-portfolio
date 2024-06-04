@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import  { TypeAnimation } from 'react-type-animation';
 import './Home.css';
 
 function Home() {
@@ -18,6 +18,10 @@ function Home() {
             </h1>
             <div className="sub-section">
               <h2>Full Stack Developer</h2>
+              <div className="location">
+                <span role="img" aria-label="pin" className="pin-emoji">📍</span>
+                <span>San Francisco, California</span>
+              </div>
               <div className="icons">
                 <a href="https://linkedin.com/in/shail-patel-0954871aa/" target="_blank" rel="noopener noreferrer">
                   <img src="/linkedin.png" alt="LinkedIn" className="icon-image" />
