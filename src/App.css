@@ -17,12 +17,13 @@ body, html, #root {
 .content {
   flex: 1;
   width: 100%; /* Full width for content */
-  padding-top: 50px; /* Adjust for the height of the sidebar */
+  padding-top: 70px; /* Adjust for the height of the sidebar */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: auto; /* Allow scrolling for content */
+  z-index: 1; /* Ensure content is above Vanta background */
 }
 
 .particles {
