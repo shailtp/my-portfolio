@@ -8,6 +8,7 @@ const Sidebar = () => {
       <ul>
         <li><NavLink exact to="/" activeClassName="active">About Me</NavLink></li>
         <li><NavLink to="/projects" activeClassName="active">Projects</NavLink></li>
+        <li><NavLink to="/experience" activeClassName="active">Experience</NavLink></li>
         <li><NavLink to="/resume" activeClassName="active">Resume</NavLink></li>
         <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
       </ul>

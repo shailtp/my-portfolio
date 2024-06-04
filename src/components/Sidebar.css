@@ -25,7 +25,7 @@
 }
 
 .sidebar ul li a {
-  color: #000000; /* Updated text color */
+  color: white; /* Updated text color */
   text-decoration: none;
   padding: 1rem;
   transition: background 0.3s;
