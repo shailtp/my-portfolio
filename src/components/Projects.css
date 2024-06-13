@@ -16,11 +16,30 @@
   font-weight: bold;
 }
 
+.info-message {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  position: relative;
+  top: 1rem;
+}
+
+.bulb-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
 .cards-container {
   display: flex;
   gap: 1rem;
   width: 100%;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -37,7 +56,7 @@
 
 .card.expanded {
   max-width: none;
-  flex: 3;
+  flex: 6;
 }
 
 .card:hover {
@@ -49,6 +68,14 @@
   color: #9370DB;
   font-weight: bold;
   margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.github-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 0.5rem;
 }
 
 .card-content {
@@ -56,20 +83,55 @@
   text-align: left;
 }
 
-.github-logo {
-  width: 30px;
-  height: 30px;
-  transition: opacity 0.3s;
-  margin-bottom: 1rem;
-}
-
-.github-logo:hover {
-  opacity: 0.7;
-}
-
 .card-content ul {
   list-style-type: disc;
   padding-left: 1.5rem;
   font-size: 1rem;
   color: #000000;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project-image {
+  width: calc(50% - 0.25rem); /* Two images per row */
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
 }
