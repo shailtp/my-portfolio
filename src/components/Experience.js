@@ -50,12 +50,11 @@ const Experience = () => {
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               contentStyle={{ color: '#000', border: '1px solid #000' }}
             >
-              <h3 className="vertical-timeline-element-title">Software Development Engineer Intern</h3>
+              <h3 className="vertical-timeline-element-title">Software Developer</h3>
               <h4 className="vertical-timeline-element-subtitle">Flowjet Valves Ltd, India (Python, Django, MongoDB)</h4>
               <ul>
-                <li>Worked as a Software Development co-op intern in the Information Technology department of this valve manufacturing industry.</li>
-                <li>Utilizing machine learning algorithms, a 30-day demand forecast for a product was generated. This forecast, which achieved approximately 70% accuracy on real-time seller data, can assist in choosing a location that can fulfill the order.</li>
-                <li>Also worked on the backend development and database management of the company E-commerce portal using Django and MongoDB. Built API endpoints for the website and reduced database latency by 45%.</li>
+                <li>Orchestrated the backend development and database management of the company E-commerce portal using Node.js and MongoDB. Built API endpoints for the website and reduced database latency by 45%.</li>
+                <li>•	Utilizing machine learning algorithms, a 30-day demand forecast for a product was generated. This forecast, which achieved approximately 70% accuracy on real-time seller data, can assist in choosing a location that can fulfill the order.</li>
               </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
