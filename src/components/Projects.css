@@ -19,7 +19,7 @@
 .cards-container {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
 }
 
@@ -28,10 +28,16 @@
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 300px;
   cursor: pointer;
   overflow: hidden;
   transition: transform 0.2s;
+  flex: 1;
+  max-width: 300px;
+}
+
+.card.expanded {
+  max-width: none;
+  flex: 3;
 }
 
 .card:hover {

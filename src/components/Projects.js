@@ -46,9 +46,12 @@ const Projects = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="card"
+            className={`card ${expanded === index ? 'expanded' : ''}`}
             onClick={() => toggleExpand(index)}
-            animate={{ height: expanded === index ? 'auto' : '60px' }}
+            animate={{ 
+              flex: expanded === index ? 3 : 1, 
+              height: expanded === index ? 'auto' : '60px' 
+            }}
             transition={{ layout: { duration: 0.3, type: 'spring' } }}
             layout
           >
