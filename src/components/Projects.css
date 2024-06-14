@@ -109,6 +109,10 @@
   transform: scale(1.05);
 }
 
+.tech-name {
+  color: #660C7E;
+}
+
 .modal {
   position: fixed;
   top: 0;

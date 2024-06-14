@@ -24,7 +24,8 @@ const projects = [
       'Orchestrated project workflow and task management using JIRA. Built a modern and responsive web design using HTML/CSS and React.js. Backend API endpoints and features using Node mailer and multer. Used Directus for Content Management.',
       'Implemented MySQL database for efficient data storage, coupled with Express and Node.js for scalable backend services. Deployed using AWS EC2. Crafted an interactive front-end experience with React, optimized for performance and cross-browser compatibility.'
     ],
-    images: [edubridge1, edubridge2, edubridge3]
+    images: [edubridge1, edubridge2, edubridge3],
+    technologies: ['MySQL', 'Express', 'ReactJS', 'NodeJS', 'Jira', 'AWS', 'Directus']
   },
   {
     title: 'SFO Passenger Traffic Visualization System',
@@ -35,7 +36,8 @@ const projects = [
       'Integrated PostgreSQL for efficient data storage and retrieval, with backend services managed using Prisma and Node.js, reducing database latency by 40% and ensuring seamless and scalable data handling.',
       'Enhanced operational efficiency through predictive analytics and comparative metrics, aiding strategic planning and resource allocation at SFO, resulting in a 20% reduction in resource allocation time.'
     ],
-    images: [sfo1, sfo2, sfo3, sfo4]
+    images: [sfo1, sfo2, sfo3, sfo4],
+    technologies: ['NextJS', 'D3JS', 'NodeJS', 'PostgreSQL', 'Prisma']
   },
   {
     title: 'No-Escape: Action maze chase game',
@@ -44,7 +46,8 @@ const projects = [
       'Led the development of an innovative action maze chase Human-Computer Interaction (HCI) application using Python and Pygame. This project featured the implementation of an AI-based opponent that dynamically follows the player using the A* algorithm to determine the optimal path based on the player\'s movements.',
       'Designed and implemented a user-friendly GUI to enhance user engagement and experience.'
     ],
-    images: [noesc1, noesc2, noesc3, noesc4]
+    images: [noesc1, noesc2, noesc3, noesc4],
+    technologies: ['Python', 'Pygame', 'AI']
   }
 ];
 
@@ -92,6 +95,12 @@ const Projects = () => {
             </motion.h2>
             {expanded === index && (
               <motion.div className="card-content" layout="position">
+                <p>
+                  <strong>Technologies: </strong>
+                  {project.technologies.map((tech, i) => (
+                    <span key={i} className="tech-name">{tech}{i < project.technologies.length - 1 ? ', ' : ''}</span>
+                  ))}
+                </p>
                 <ul>
                   {project.description.map((desc, i) => (
                     <li key={i}>{desc}</li>
