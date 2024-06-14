@@ -97,6 +97,16 @@
   margin-top: 1rem;
 }
 
+.nina-images {
+  flex-wrap: nowrap; /* Ensure all images are on a single line */
+  overflow-x: auto; /* Add horizontal scrolling if necessary */
+}
+
+.nina-images .nina-image {
+  width: calc(25% - 0.25rem);
+  flex-shrink: 0;
+}
+
 .project-image {
   width: calc(50% - 0.25rem); /* Two images per row */
   height: auto;

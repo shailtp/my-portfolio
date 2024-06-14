@@ -25,7 +25,7 @@ const Resume = () => {
       {isOpen && (
         <FocusTrap>
           <div className="modal">
-            <div className="modal-content">
+            <div className="modal-content tile">
               <h2>Resume Downloaded</h2>
               <p>Shail Patel's Resume has been downloaded. Check your downloads folder.</p>
               <button onClick={closeModal} className="close-button">Close</button>

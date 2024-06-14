@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import './Projects.css';
 import githubLogo from '../assets/github.png';
 import edubridge1 from '../assets/edubridge1.jpeg';
-import edubridge2 from '../assets/edubridge2.jpeg';
-import edubridge3 from '../assets/edubridge3.jpeg';
+import edubridge2 from '../assets/edubridge2.png';
+import edubridge3 from '../assets/edubridge3.png';
+import edubridge4 from '../assets/edubridge4.png';
 import sfo1 from '../assets/sfo1.jpeg';
 import sfo2 from '../assets/sfo2.jpeg';
 import sfo3 from '../assets/sfo3.jpeg';
@@ -13,6 +14,10 @@ import noesc1 from '../assets/noesc1.jpeg';
 import noesc2 from '../assets/noesc2.jpeg';
 import noesc3 from '../assets/noesc3.jpeg';
 import noesc4 from '../assets/noesc4.jpeg';
+import nina1 from '../assets/nina1.png';
+import nina2 from '../assets/nina2.png';
+import nina3 from '../assets/nina3.png';
+import nina4 from '../assets/nina4.png';
 import bulbLogo from '../assets/bulb.jpg';
 
 const projects = [
@@ -24,7 +29,7 @@ const projects = [
       'Orchestrated project workflow and task management using JIRA. Built a modern and responsive web design using HTML/CSS and React.js. Backend API endpoints and features using Node mailer and multer. Used Directus for Content Management.',
       'Implemented MySQL database for efficient data storage, coupled with Express and Node.js for scalable backend services. Deployed using AWS EC2. Crafted an interactive front-end experience with React, optimized for performance and cross-browser compatibility.'
     ],
-    images: [edubridge1, edubridge2, edubridge3],
+    images: [edubridge1, edubridge2, edubridge3, edubridge4],
     technologies: ['MySQL', 'Express', 'ReactJS', 'NodeJS', 'Jira', 'AWS', 'Directus']
   },
   {
@@ -48,6 +53,16 @@ const projects = [
     ],
     images: [noesc1, noesc2, noesc3, noesc4],
     technologies: ['Python', 'Pygame', 'AI']
+  },
+  {
+    title: 'Nina: Your personal expense tracker',
+    github: 'https://github.com/shailtp/ExpenseTracker',
+    description: [
+      'Developed and maintained a comprehensive expense tracking application for iOS. Managed all aspects of the app\'s development in XCode, ensuring a robust and user-friendly experience.',
+      'Implemented features for real-time expense recording, categorization, and data visualization. Conducted extensive unit and UI testing to guarantee app reliability and usability. Demonstrated proficiency in Swift, CoreData, and iOS development best practices, alongside skills in version control using Git.'
+    ],
+    images: [nina1, nina2, nina3, nina4],
+    technologies: ['Swift', 'JSON Parsing', 'CoreData']
   }
 ];
 
@@ -106,13 +121,13 @@ const Projects = () => {
                     <li key={i}>{desc}</li>
                   ))}
                 </ul>
-                <div className="images-container">
+                <div className={`images-container ${project.title === 'Nina: Your personal expense tracker' ? 'nina-images' : ''}`}>
                   {project.images.map((image, i) => (
                     <img
                       key={i}
                       src={image}
                       alt={`project ${i + 1}`}
-                      className="project-image"
+                      className={`project-image ${project.title === 'Nina: Your personal expense tracker' ? 'nina-image' : ''}`}
                       onClick={() => openModal(image)}
                     />
                   ))}

@@ -11,15 +11,16 @@
 
 .tile {
   background-color: #ffffff;
-  padding: 5rem;
+  padding: 2rem;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: calc(100% - 4rem);
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* Adjusted to space content evenly */
   align-items: center;
+  position: relative;
 }
 
 .modal {
@@ -43,16 +44,19 @@
   max-width: 500px;
   width: 90%;
   animation: slideIn 0.5s; /* Add slide-in animation */
+  position: relative;
 }
 
 .close-button {
   background-color: #ff9900;
   border: none;
-  padding: 10px 20px;
+  padding: 5px 10px; /* Make the button smaller */
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px;
   color: #fff;
+  position: relative; /* Position the button inside the tile */
+  margin-top: 20px;
+  font-size: 0.8rem; /* Make the button text smaller */
 }
 
 @keyframes fadeIn {
