@@ -46,7 +46,7 @@ const Experience = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="January 2022 - May 2023"
+              date="January 2023 - May 2023"
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               contentStyle={{ color: '#000', border: '1px solid #000' }}
             >
@@ -54,7 +54,21 @@ const Experience = () => {
               <h4 className="vertical-timeline-element-subtitle">Flowjet Valves Ltd, India (Javascript, NodeJS, MongoDB)</h4>
               <ul>
                 <li>Orchestrated the backend development and database management of the company E-commerce portal using Node.js and MongoDB. Built API endpoints for the website and reduced database latency by 45%.</li>
-                <li>•	Utilizing machine learning algorithms, a 30-day demand forecast for a product was generated. This forecast, which achieved approximately 70% accuracy on real-time seller data, can assist in choosing a location that can fulfill the order.</li>
+                <li>Utilizing machine learning algorithms, a 30-day demand forecast for a product was generated. This forecast, which achieved approximately 70% accuracy on real-time seller data, can assist in choosing a location that can fulfill the order.</li>
+              </ul>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="May 2022 – July 2022"
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              contentStyle={{ color: '#000', border: '1px solid #000' }}
+            >
+              <h3 className="vertical-timeline-element-title">Software Development Intern</h3>
+              <h4 className="vertical-timeline-element-subtitle">JPAL South Asia, New Delhi-India (React.js, Node.js, Snowflake)</h4>
+              <ul>
+                <li>Developed and implemented a digital communications strategy for the organization's website, aligning with broader communications goals.</li>
+                <li>Accomplished a 30% increase in user engagement, as measured by website analytics, by developing and implementing a comprehensive digital communications strategy.</li>
+                <li>Achieved a 40% faster resolution time for user issues, as measured by support ticket data, by responding to user inquiries promptly and coordinating with external developers for complex troubleshooting.</li>
               </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
