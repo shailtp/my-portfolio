@@ -129,6 +129,21 @@
   margin-bottom: 0;
 }
 
+.skills p {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.category {
+  color: #9370DB;
+  font-family: Helvetica, sans-serif;
+}
+
+.skill {
+  color: #000000;
+  
+}
+
 @media (max-width: 768px) {
   .top-section {
     flex-direction: column;

@@ -27,8 +27,8 @@ const Contact = () => {
   return (
     <div className="contact-section">
       <div className="tile">
-        <div className="left-side">
-          <h1>Social Media</h1>
+        <div className="social-media">
+          <h1>Social Media and other handles</h1>
           <ul className="social-links">
             <li><a href="mailto:example@gmail.com"><img src={gmailLogo} alt="Gmail" /> Gmail</a></li>
             <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src={instagramLogo} alt="Instagram" /> Instagram</a></li>
@@ -38,7 +38,9 @@ const Contact = () => {
             <li><a href="https://hackerrank.com" target="_blank" rel="noopener noreferrer"><img src={hackerrankLogo} alt="HackerRank" /> HackerRank</a></li>
           </ul>
         </div>
-        <div className="right-side">
+      </div>
+      <div className="tile">
+        <div className="contact-form">
           <h1>Contact Me</h1>
           <form action="https://formspree.io/f/xbjnnqzg" method="POST" onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="Name" required />
