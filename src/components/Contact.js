@@ -30,12 +30,12 @@ const Contact = () => {
         <div className="social-media">
           <h1>Social Media and other handles</h1>
           <ul className="social-links">
-            <li><a href="mailto:example@gmail.com"><img src={gmailLogo} alt="Gmail" /> Gmail</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src={instagramLogo} alt="Instagram" /> Instagram</a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} alt="LinkedIn" /> LinkedIn</a></li>
-            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src={githubLogo} alt="GitHub" /> GitHub</a></li>
-            <li><a href="https://leetcode.com" target="_blank" rel="noopener noreferrer"><img src={leetcodeLogo} alt="LeetCode" /> LeetCode</a></li>
-            <li><a href="https://hackerrank.com" target="_blank" rel="noopener noreferrer"><img src={hackerrankLogo} alt="HackerRank" /> HackerRank</a></li>
+            <li><a href="mailto:patelshail233@gmail.com"><img src={gmailLogo} alt="Gmail" /> Gmail</a></li>
+            <li><a href="https://instagram.com/shaillpatell" target="_blank" rel="noopener noreferrer"><img src={instagramLogo} alt="Instagram" /> Instagram</a></li>
+            <li><a href="https://linkedin.com/in/shail-patel-0954871aa/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} alt="LinkedIn" /> LinkedIn</a></li>
+            <li><a href="https://github.com/shailtp" target="_blank" rel="noopener noreferrer"><img src={githubLogo} alt="GitHub" /> GitHub</a></li>
+            <li><a href="https://leetcode.com/u/shailtp/" target="_blank" rel="noopener noreferrer"><img src={leetcodeLogo} alt="LeetCode" /> LeetCode</a></li>
+            <li><a href="https://www.hackerrank.com/profile/shailtp" target="_blank" rel="noopener noreferrer"><img src={hackerrankLogo} alt="HackerRank" /> HackerRank</a></li>
           </ul>
         </div>
       </div>
