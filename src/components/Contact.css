@@ -1,7 +1,6 @@
 .contact-section {
   padding: 2rem;
   color: #000000;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,48 +10,122 @@
 
 .tile {
   background-color: #ffffff;
-  padding: 5rem;
+  padding: 2rem;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: calc(100% - 4rem);
-  height: auto;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.contact-section h1 {
-  font-size: 2.5rem;
+.left-side {
+  width: 40%;
+  padding-right: 2rem;
+}
+
+.right-side {
+  width: 60%;
+  padding-left: 2rem;
+}
+
+.left-side h1, .right-side h1 {
+  font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
-.contact-section p {
-  font-size: 1.25rem;
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
   color: #000000;
-}
-
-.contact-section a {
-  color: #9370DB;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-.contact-section a:hover {
-  text-decoration: underline;
+.social-links img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  height: 150px; /* Fixed height for textarea */
+  resize: none; /* Prevent resizing */
+}
+
+.char-count {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.char-count.exceed {
+  color: red;
+}
+
+form button {
+  padding: 0.75rem;
+  border: none;
+  background-color: #9370DB;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #7953d2;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
   .contact-section {
+    flex-direction: column;
     padding: 1rem;
   }
   .tile {
-    padding: 2rem;
+    width: 90%;
+    flex-direction: column;
   }
-  .contact-section h1 {
-    font-size: 2rem;
+  .left-side, .right-side {
+    width: 100%;
   }
-  .contact-section p {
-    font-size: 1rem;
+  .left-side h1, .right-side h1 {
+    font-size: 1.5rem;
   }
 }
