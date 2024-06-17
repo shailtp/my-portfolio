@@ -30,7 +30,7 @@ const projects = [
       'Implemented MySQL database for efficient data storage, coupled with Express and Node.js for scalable backend services. Deployed using AWS EC2. Crafted an interactive front-end experience with React, optimized for performance and cross-browser compatibility.'
     ],
     images: [edubridge1, edubridge2, edubridge3, edubridge4],
-    technologies: ['MySQL', 'Express', 'ReactJS', 'NodeJS', 'Jira', 'AWS', 'Directus']
+    technologies: ['MySQL', 'Express', 'ReactJS', 'NodeJS', 'Jira', 'AWS', 'Docker']
   },
   {
     title: 'SFO Passenger Traffic Visualization System',
