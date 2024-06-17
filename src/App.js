@@ -18,7 +18,7 @@ function App() {
       el: vantaRef.current,
       THREE,
       color: 0xffffff, // White color for nodes and lines
-      backgroundColor: 0xD681EC, // Dark purple background color
+      backgroundColor: 0x2C0748, // Dark purple background color
       points: 10,
       maxDistance: 20,
       spacing: 15,
