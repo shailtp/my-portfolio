@@ -23,7 +23,7 @@ import bulbLogo from '../assets/bulb.jpg';
 const projects = [
   {
     title: 'EduBridge: A Learning Management System',
-    github: 'https://github.com/CSC-648-SFSU/csc648-04-sp24-team-04',
+    github: 'https://github.com/nh0397/EduBridge',
     description: [
       'Spearheaded the full stack development of a comprehensive Learning video streaming application, Edu Bridge, utilizing the MERN stack. This project mirrors Canvas\' functionality, offering video uploading, sharing, and real-time streaming capabilities.',
       'Orchestrated project workflow and task management using JIRA. Built a modern and responsive web design using HTML/CSS and React.js. Backend API endpoints and features using Node mailer and multer. Used Directus for Content Management.',
