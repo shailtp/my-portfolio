@@ -18,6 +18,20 @@ const Experience = () => {
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              date="June 2024 - August 2024"
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              contentStyle={{ color: '#000', border: '1px solid #000' }}
+            >
+              <h3 className="vertical-timeline-element-title">Software Engineering Intern</h3>
+              <h4 className="vertical-timeline-element-subtitle">Second Spectrum, Los Angeles, CA (React.js, Typescript, AWS)</h4>
+              <ul>
+                <li>Engineered a play-by-play dashboard that supported real-time NBA data processing and handling over 100,000 events per game.</li>
+                <li>Designed the frontend using React and TypeScript, resulting in a 15% improvement in user interaction speed. Utilized AWS services such as Lambda and S3 to create a fault-tolerant, highly scalable backend capable of processing and reconciling data with sub-second latency.</li>
+                <li>Improved video content delivery efficiency by 25% through optimized data feed reconciliation, contributing to more accurate and timely analytics for coaches and sports analysts.</li>
+              </ul>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
               date="January 2024 - May 2024"
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               contentStyle={{ color: '#000', border: '1px solid #000' }}
