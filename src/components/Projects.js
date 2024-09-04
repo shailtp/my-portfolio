@@ -43,15 +43,15 @@ const projects = [
     technologies: ['MySQL', 'Express', 'ReactJS', 'NodeJS', 'Jira', 'AWS', 'Docker']
   },
   {
-    title: 'EduBridge: A Learning Management System',
-    github: 'https://github.com/nh0397/EduBridge',
+    title: 'Innovest- Stock Visualization and Analysis',
+    github: 'https://github.com/shailtp/stock-viewer',
     description: [
-      'Spearheaded the full stack development of a comprehensive Learning video streaming application, Edu Bridge, utilizing the MERN stack. This project mirrors Canvas\' functionality, offering video uploading, sharing, and real-time streaming capabilities.',
-      'Orchestrated project workflow and task management using JIRA. Built a modern and responsive web design using HTML/CSS and React.js. Backend API endpoints and features using Node mailer and multer. Used Directus for Content Management.',
-      'Implemented MySQL database for efficient data storage, coupled with Express and Node.js for scalable backend services. Deployed using AWS EC2. Crafted an interactive front-end experience with React, optimized for performance and cross-browser compatibility.'
+      'Built a stock visualization app using React.js, Three.js, Node.js, and D3.js, displaying real-time data for all NYSE and NASDAQ stocks.',
+      'Leveraged the Alpha Vantage API to fetch and process stock data, enabling analysis of over 2,800 stocks with 15% faster load times.',
+      'Visualized complex stock tickers in interactive 3D formats, improving data accessibility and user engagement by 40%.'
     ],
     images: [edubridge1, edubridge2, edubridge3, edubridge4],
-    technologies: ['MySQL', 'Express', 'ReactJS', 'NodeJS', 'Jira', 'AWS', 'Docker']
+    technologies: ['ReactJS', 'AlphaVantage API', 'NodeJS', 'Redis']
   },
   {
     title: 'SFO Passenger Traffic Visualization System',
