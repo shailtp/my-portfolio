@@ -22,6 +22,27 @@ import bulbLogo from '../assets/bulb.jpg';
 
 const projects = [
   {
+    title: 'Leetcode AI assistant extension',
+    github: 'https://github.com/shailtp/leetcode-ai-assistant',
+    description: [
+      'Spearheaded the development of this google chrome extension to autofill pseudocode or further code contents of a specific leetcode problem utilizing Google Gemini API tokens and JavaScript.',
+      'This project featured the implementation of an AI-based extension to infer details of a Leetcode problem using web scraping and then utilizing Google Gemini’s LLM to provide auto suggestions according to the input code.'
+    ],
+    images: [edubridge1, edubridge2, edubridge3, edubridge4],
+    technologies: ['Javascript', 'Google Gemini LLM', 'HTML/CSS', 'Artificial Intelligence']
+  },
+  {
+    title: 'EduBridge: A Learning Management System',
+    github: 'https://github.com/nh0397/EduBridge',
+    description: [
+      'Spearheaded the full stack development of a comprehensive Learning video streaming application, Edu Bridge, utilizing the MERN stack. This project mirrors Canvas\' functionality, offering video uploading, sharing, and real-time streaming capabilities.',
+      'Orchestrated project workflow and task management using JIRA. Built a modern and responsive web design using HTML/CSS and React.js. Backend API endpoints and features using Node mailer and multer. Used Directus for Content Management.',
+      'Implemented MySQL database for efficient data storage, coupled with Express and Node.js for scalable backend services. Deployed using AWS EC2. Crafted an interactive front-end experience with React, optimized for performance and cross-browser compatibility.'
+    ],
+    images: [edubridge1, edubridge2, edubridge3, edubridge4],
+    technologies: ['MySQL', 'Express', 'ReactJS', 'NodeJS', 'Jira', 'AWS', 'Docker']
+  },
+  {
     title: 'EduBridge: A Learning Management System',
     github: 'https://github.com/nh0397/EduBridge',
     description: [
