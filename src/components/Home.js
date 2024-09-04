@@ -43,10 +43,10 @@ function Home() {
           <p> I am a seasoned Software Engineer with a M.S. in Computer Science from San Francisco State University and a B.S. in Computer Science from Vellore Institute of Technology, India. I have a proven ability to quickly adapt to new technologies, with a solid background in modern software development practices, version control, issue tracking, and containerization </p>
           <div className="skills">
             <p><strong className="category">Programming Languages:</strong> <span className="skill">JavaScript, Python, C/C++, Swift</span></p>
-            <p><strong className="category">Database:</strong> <span className="skill">MySQL, Oracle DB, MongoDB, PostgreSQL</span></p>
-            <p><strong className="category">Frontend Technologies:</strong> <span className="skill">HTML, CSS, React.js, D3.js, Bootstrap</span></p>
-            <p><strong className="category">Backend Web Technologies:</strong> <span className="skill">Next.js, Node.js, Express, RESTful API, Django</span></p>
-            <p><strong className="category">Tools/Softwares:</strong> <span className="skill">JIRA, Postman, Docker, Git, Directus</span></p>
+            <p><strong className="category">Database:</strong> <span className="skill">MySQL, Oracle DB, MongoDB, PostgreSQL, Redis</span></p>
+            <p><strong className="category">Frontend Technologies:</strong> <span className="skill">HTML, CSS, React.js, Next.js, D3.js, TypeScript</span></p>
+            <p><strong className="category">Backend Web Technologies:</strong> <span className="skill">Node.js, Express, RESTful API, GraphQL, Django</span></p>
+            <p><strong className="category">Other Tools/Softwares:</strong> <span className="skill">AWS, JIRA, Postman, Docker, Git, Snowflake, Azure, Firebase</span></p>
           </div>
         </div>
       </div>
