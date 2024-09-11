@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
@@ -6,14 +6,27 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
+import MobileMessage from './components/MobileMessage'; // Importing MobileMessage component
 import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
 import './App.css';
 
 function App() {
   const vantaRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkMobile = () => {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    checkMobile(); // Initial check
+    window.addEventListener('resize', checkMobile); // Add event listener for resize
+
     const vantaEffect = NET({
       el: vantaRef.current,
       THREE,
@@ -26,8 +39,13 @@ function App() {
 
     return () => {
       if (vantaEffect) vantaEffect.destroy();
+      window.removeEventListener('resize', checkMobile); // Cleanup listener
     };
   }, []);
+
+  if (isMobile) {
+    return <MobileMessage />;
+  }
 
   return (
     <Router>
