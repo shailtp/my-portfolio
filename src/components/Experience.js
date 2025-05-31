@@ -73,11 +73,11 @@ const Experience = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="May 2022 – July 2022"
+              date="May 2022 – August 2022"
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               contentStyle={{ color: '#000', border: '1px solid #000' }}
             >
-              <h3 className="vertical-timeline-element-title">Software Development Intern</h3>
+              <h3 className="vertical-timeline-element-title">Data Science Intern</h3>
               <h4 className="vertical-timeline-element-subtitle">JPAL South Asia, New Delhi-India (React.js, Node.js, Snowflake)</h4>
               <ul>
                 <li>Developed and implemented a digital communications strategy for the organization's website, aligning with broader communications goals.</li>
